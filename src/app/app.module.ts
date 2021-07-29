@@ -9,12 +9,13 @@ import { environment } from '../environments/environment';
 import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
 import { DropzoneDirective } from './dropzone.directive';
+import { UseruploadComponent } from './userupload/userupload.component';
 
 @NgModule({
   imports:      [ AngularFireModule.initializeApp(environment.firebaseConfig),
                   AngularFirestoreModule,
                   BrowserModule, FormsModule ],
-  declarations: [ AppComponent, HelloComponent, DropzoneDirective ],
+  declarations: [ AppComponent, HelloComponent, DropzoneDirective, UseruploadComponent ],
   bootstrap:    [ AppComponent ]
 })
 export class AppModule { }
