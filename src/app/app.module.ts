@@ -12,7 +12,7 @@ import { AppComponent } from './app.component';
 import { HelloComponent } from './hello.component';
 import { DropzoneDirective } from './dropzone.directive';
 import { UseruploadComponent } from './userupload/userupload.component';
-import { Services/csv2fireService } from './services/csv2fire.service';
+import { Csv2fireService } from './services/csv2fire.service';
 
 @NgModule({
   imports:      [ AngularFireModule.initializeApp(environment.firebaseConfig),
@@ -20,6 +20,6 @@ import { Services/csv2fireService } from './services/csv2fire.service';
                   BrowserModule, FormsModule ],
   declarations: [ AppComponent, HelloComponent, DropzoneDirective, UseruploadComponent ],
   bootstrap:    [ AppComponent ],
-  providers: [Services/csv2fireService]
+  providers: [Csv2fireService]
 })
 export class AppModule { }
